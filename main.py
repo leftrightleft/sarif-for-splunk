@@ -2,10 +2,10 @@ import requests
 import json
 import os
 
-input = os.environ.get('INPUT')
-output = os.environ.get('OUTPUT')
-token = os.environ.get('TOKEN')
-url = os.environ.get('SPLUNK_ENDPOINT')
+input = os.environ.get('input')
+output = os.environ.get('output')
+token = os.environ.get('token')
+url = os.environ.get('splunk_endpoint')
 
 
 headers = {'Authorization': 'Splunk ' + os.environ['TOKEN'],
