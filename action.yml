@@ -1,0 +1,18 @@
+name: "GHAS for Splunk"
+description: "This action exports vulnerabilities from GitHub Advanced Security into Splunk using the SARIF document format"
+author: "Dan Shanahan (@leftrightleft)"
+inputs:
+  token:
+    description: "Splunk HEC Token"
+    required: true
+  input:
+    description: 'Path to the input SARIF file'
+    required: true
+  output:
+    description: 'Path to the output SARIF file'
+    required: true
+  splunk_endpoint:
+    description: 'Splunk HEC endpoint.  Ex: https://splunkserver.com:8088/services/collector'
+runs:
+  using: "docker"
+  image: "Dockerfile"
