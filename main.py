@@ -8,8 +8,8 @@ token = os.environ.get('token')
 url = os.environ.get('splunk_endpoint')
 
 
-headers = {'Authorization': 'Splunk ' + token,
-          "Content-Type": "application/json"}
+# headers = {'Authorization': 'Splunk ' + token,
+#           "Content-Type": "application/json"}
 
 print(input, output, url)
 # sarif = json.load(open('test.json',))
